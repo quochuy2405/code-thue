@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>lab8</title>
 </head>
 
 <body>
@@ -44,7 +44,7 @@
                                     Age of cat
                                 </p>
                                 <div class="input-form">
-                                    <input type="text" name="age" required>
+                                    <input type="number" name="age">
                                 </div>
                             </div>
 
@@ -57,31 +57,31 @@
                                 <div class="flex">
                                     <div class="input-form input-date">
                                         <b>Mon.</b>
-                                        <input type="text" name="mon">
+                                        <input type="checkbox" name="mon">
                                     </div>
                                     <div class="input-form input-date">
                                         <b>Tue.</b>
-                                        <input type="text" name="tue">
+                                        <input type="checkbox" name="tue">
                                     </div>
                                     <div class="input-form input-date">
                                         <b>Wed.</b>
-                                        <input type="text" name="wed">
+                                        <input type="checkbox" name="wed">
                                     </div>
                                     <div class="input-form input-date">
                                         <b>Thu.</b>
-                                        <input type="text" name="thu">
+                                        <input type="checkbox" name="thu">
                                     </div>
                                     <div class="input-form input-date">
                                         <b>Fri.</b>
-                                        <input type="text" name="fri">
+                                        <input type="checkbox" name="fri">
                                     </div>
                                     <div class="input-form input-date">
                                         <b>Sat.</b>
-                                        <input type="text" name="sat">
+                                        <input type="checkbox" name="sat">
                                     </div>
                                     <div class="input-form input-date">
                                         <b>Sun.</b>
-                                        <input type="text" name="sun">
+                                        <input type="checkbox" name="sun">
                                     </div>
 
                                 </div>
@@ -95,12 +95,19 @@
                                 </p>
                                 <div class="input-form">
                                     <select name="time-arrive">
+                                        <option value="600">6:00 AM</option>
+                                        <option value="630">6:30 AM</option>
+                                        <option value="700">7:00 AM</option>
+                                        <option value="730">7:30 AM</option>
+                                        <option value="800">8:00 AM</option>
+                                        <option value="830">8:30 AM</option>
+                                        <option value="900">9:00 AM</option>
                                         <option value="930">9:30 AM</option>
                                         <option value="1000">10:00 AM</option>
                                         <option value="1030">10:30 AM</option>
                                         <option value="1100">11:00 AM</option>
                                         <option value="1130">11:30 AM</option>
-
+                                        <option value="1200">12:00 AM</option>
                                     </select>
                                 </div>
                             </div>
@@ -110,11 +117,24 @@
                                 </p>
                                 <div class="input-form">
                                     <select name="time-leave">
-                                        <option value="930">9:30 PM</option>
-                                        <option value="1000">10:00 PM</option>
-                                        <option value="1030">10:30 PM</option>
-                                        <option value="1100">11:00 PM</option>
-                                        <option value="1130">11:30 PM</option>
+                                        <option value="1000">10:00 AM</option>
+                                        <option value="1030">10:30 AM</option>
+                                        <option value="1100">11:00 AM</option>
+                                        <option value="1130">11:30 AM</option>
+                                        <option value="1200">12:00 AM</option>
+                                        <option value="100">1:00 PM</option>
+                                        <option value="130">1:30 PM</option>
+                                        <option value="200">2:00 PM</option>
+                                        <option value="230">2:30 PM</option>
+                                        <option value="300">3:00 PM</option>
+                                        <option value="330">3:30 PM</option>
+                                        <option value="400">4:00 PM</option>
+                                        <option value="430">4:30 PM</option>
+                                        <option value="500">5:00 PM</option>
+                                        <option value="530">5:30 PM</option>
+                                        <option value="600">6:00 PM</option>
+                                        <option value="630">6:30 PM</option>
+
                                     </select>
                                 </div>
                             </div>
@@ -141,7 +161,7 @@
                                 </p>
                                 <div class="radio-group">
                                     <label class="input-radio">
-                                        <input type="radio" name="temperament" id="friendly">
+                                        <input type="radio" name="temperament" id="friendly" checked>
                                         <p class="input-title">
                                             Friendly
                                         </p>
@@ -179,12 +199,12 @@
                 </div>
                 <div class="form-bot">
                     <div class="row-form">
-                        <div class="input-group flex-1">
+                        <div class="input-group flex-1" id="describe">
                             <p class="input-title">
                                 Describe Diet
                             </p>
                             <div class="input-form">
-                                <input type="text" name="describe" required>
+                                <input type="text" name="describe" id="describe">
                             </div>
                         </div>
                     </div>
@@ -204,7 +224,7 @@
                                 Emergency Contact Name
                             </p>
                             <div class="input-form">
-                                <input type="text" name="contact-name" required>
+                                <input type="text" name="contact-name">
                             </div>
                         </div>
                     </div>
@@ -214,7 +234,7 @@
                                 Daytime Phone
                             </p>
                             <div class="input-form">
-                                <input type="text" name="daytime-phone" required>
+                                <input type="text" name="daytime-phone">
                             </div>
                         </div>
                         <div class="input-group w-35">
@@ -222,7 +242,7 @@
                                 Contact Phone
                             </p>
                             <div class="input-form">
-                                <input type="text" name="contact-phone" required>
+                                <input type="text" name="contact-phone">
                             </div>
                         </div>
                     </div>

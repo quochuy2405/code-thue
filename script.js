@@ -1,15 +1,23 @@
 function app() {
     const form = document.querySelector('#form')
     const inputs = document.querySelectorAll('input')
-    const buttonSubmit = document.querySelector('#btn-submit')
+    const special = document.querySelector('#special')
+    const describe = document.querySelector('#describe')
 
     form.addEventListener('submit', (e) => {
         e.preventDefault()
         inputs.forEach(input => console.log(input.value))
     })
-    buttonSubmit.addEventListener('click', (e) => {
-        console.log('is onClick')
+    special.addEventListener('change', (event) => {
+        if (event.target.checked) {
+            describe.style.display = 'none'
+        }
+        else {
+            describe.style.display = 'block'
+        }
+
     })
+
 
 }
 
