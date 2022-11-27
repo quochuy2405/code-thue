@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <div class="header-title">
+                <div class="logo-header">
+                    <img src="./images/cat_logo.png" alt="logo-cat">
+                </div>
+                <h2>Fluffy Friends Cat Daycare</h2>
+            </div>
+            <div class="header-nav">
+                <p>Home</p>
+            </div>
+
+        </div>
+        <div class="body-form">
+
+            <form id="form" method="get">
+                <h2 class="form-title">Cat Intake Form</h2>
+                <div class="form-group">
+                    <div class="left-form">
+                        <div class="row-form row-full">
+                            <div class="input-group flex-7">
+                                <p class="input-title">
+                                    Name of cat
+                                </p>
+                                <div class="input-form">
+                                    <input type="text" name="name" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group flex-2">
+                                <p class="input-title">
+                                    Age of cat
+                                </p>
+                                <div class="input-form">
+                                    <input type="text" name="age" required>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row-form">
+                            <div class="input-group flex-3">
+                                <p class="input-title">
+                                    Days Needed
+                                </p>
+                                <div class="flex">
+                                    <div class="input-form input-date">
+                                        <b>Mon.</b>
+                                        <input type="text" name="mon">
+                                    </div>
+                                    <div class="input-form input-date">
+                                        <b>Tue.</b>
+                                        <input type="text" name="tue">
+                                    </div>
+                                    <div class="input-form input-date">
+                                        <b>Wed.</b>
+                                        <input type="text" name="wed">
+                                    </div>
+                                    <div class="input-form input-date">
+                                        <b>Thu.</b>
+                                        <input type="text" name="thu">
+                                    </div>
+                                    <div class="input-form input-date">
+                                        <b>Fri.</b>
+                                        <input type="text" name="fri">
+                                    </div>
+                                    <div class="input-form input-date">
+                                        <b>Sat.</b>
+                                        <input type="text" name="sat">
+                                    </div>
+                                    <div class="input-form input-date">
+                                        <b>Sun.</b>
+                                        <input type="text" name="sun">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row-form">
+                            <div class="input-group flex-1">
+                                <p class="input-title">
+                                    Time Arrive
+                                </p>
+                                <div class="input-form">
+                                    <select name="time-arrive">
+                                        <option value="930">9:30 AM</option>
+                                        <option value="1000">10:00 AM</option>
+                                        <option value="1030">10:30 AM</option>
+                                        <option value="1100">11:00 AM</option>
+                                        <option value="1130">11:30 AM</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group flex-1">
+                                <p class="input-title">
+                                    Time Leave
+                                </p>
+                                <div class="input-form">
+                                    <select name="time-leave">
+                                        <option value="930">9:30 PM</option>
+                                        <option value="1000">10:00 PM</option>
+                                        <option value="1030">10:30 PM</option>
+                                        <option value="1100">11:00 PM</option>
+                                        <option value="1130">11:30 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-form">
+                            <label class="flex">
+                                <input type="checkbox" name="spayed" id="spayed">
+                                <p>Cat Spayed/Neutered</p>
+                            </label>
+
+                        </div>
+                        <div class="row-form">
+                            <label class="flex">
+                                <input type="checkbox" name="special" id="special">
+                                <p>Special Diet</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex-4">
+                        <div class="row-form">
+                            <div class="input-group flex-1">
+                                <p class="input-title">
+                                    Temperament of Cat
+                                </p>
+                                <div class="radio-group">
+                                    <label class="input-radio">
+                                        <input type="radio" name="temperament" id="friendly">
+                                        <p class="input-title">
+                                            Friendly
+                                        </p>
+                                    </label>
+                                    <label class="input-radio">
+                                        <input type="radio" name="temperament" id="sleepy">
+                                        <p class="input-title">
+                                            Sleepy
+                                        </p>
+                                    </label>
+                                    <label class="input-radio">
+                                        <input type="radio" name="temperament" id="independent">
+                                        <p class="input-title">
+                                            Independent
+                                        </p>
+                                    </label>
+                                    <label class="input-radio">
+                                        <input type="radio" name="temperament" id="territorial">
+                                        <p class="input-title">
+                                            Territorial
+                                        </p>
+                                    </label>
+                                    <div class="input-group flex-1">
+                                        <p class="input-title">
+                                            Describe Territorial
+                                        </p>
+                                        <div class="input-form">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bot">
+                    <div class="row-form">
+                        <div class="input-group flex-1">
+                            <p class="input-title">
+                                Describe Diet
+                            </p>
+                            <div class="input-form">
+                                <input type="text" name="describe" required>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row-form row-full">
+                        <div class="input-group w-50">
+                            <p class="input-title">
+                                Owner's Name
+                            </p>
+                            <div class="input-form">
+                                <input type="text" name="owner" required>
+                            </div>
+                        </div>
+                        <div class="input-group w-35">
+                            <p class="input-title">
+                                Emergency Contact Name
+                            </p>
+                            <div class="input-form">
+                                <input type="text" name="contact-name" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-form row-full">
+                        <div class="input-group w-50">
+                            <p class="input-title">
+                                Daytime Phone
+                            </p>
+                            <div class="input-form">
+                                <input type="text" name="daytime-phone" required>
+                            </div>
+                        </div>
+                        <div class="input-group w-35">
+                            <p class="input-title">
+                                Contact Phone
+                            </p>
+                            <div class="input-form">
+                                <input type="text" name="contact-phone" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-form">
+                        <div class="input-group flex-1">
+                            <p class="input-title">
+                                Cell Phone
+                            </p>
+                            <div class="input-form">
+                                <input type="text" name="cell-phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-form">
+                        <div class="input-group flex-1">
+                            <p class="input-title">
+                                Email
+                            </p>
+                            <div class="input-form">
+                                <input type="email" name="email">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button id="btn-submit" type="submit">Submit</button>
+
+
+            </form>
+
+            <div class="img-cat">
+                <img src="./images/cat.png" alt="cat">
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="logo">
+                <img src="./images/toecat.png" alt="toe" id="toe-cat">
+                <img src="./images/accredited.png" alt="accredited" id="accredited">
+            </div>
+            <div class="address">
+                <h3>123 Fluffy Street Ottawa, Ontario</h3>
+                <h3>(613) 123-CATS</h3>
+                <h4>fluffyfriends@catdaycare.ca</h4>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
